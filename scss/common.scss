@@ -1,0 +1,11 @@
+//base
+@import './base/reset';
+@import './base/preset';
+@import './base/var';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+//page
+@import './page/main';
