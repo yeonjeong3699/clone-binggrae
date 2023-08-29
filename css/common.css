@@ -212,7 +212,6 @@ html {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: -1.5px;
-  transition: 0.5s;
 }
 .h-container .h-bottom .inner .gnb-wrapper .gnb-list > li .sub-menu a:hover {
   color: #e92b28;

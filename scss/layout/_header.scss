@@ -107,7 +107,7 @@
                                 font-size: 18px;
                                 font-weight: 400;
                                 letter-spacing: -1.5px;
-                                transition: 0.5s;
+                                // transition: 0.5s;
                                 &:hover{
                                     color: $red;
                                 }
@@ -158,7 +158,6 @@
                         li{
                             display: flex;
                             justify-content: center;
-                            
                             & > a{
                                 font-family: 'poppins';
                                 font-size: 16px;
