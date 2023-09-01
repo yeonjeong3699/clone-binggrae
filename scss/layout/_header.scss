@@ -1,7 +1,7 @@
 .h-container{
     position: fixed;
     width: 100%;
-
+    z-index: 999;
     .h-top{
         width: 100%;
         height: 30px;
@@ -22,9 +22,9 @@
                 &:first-of-type:after{
                     content: "";
                     display: block;
-                    width: 2px;
+                    width: 1px;
                     height: 10px;
-                    background-color: #f2f2f2;
+                    background-color: rgba(100, 100, 100, 0.2);
                     margin-left: 10px;
                     position: absolute;
                     right: -12px;
@@ -56,40 +56,44 @@
                     & > li{
                         position: relative;
                         height: 100%;
-                        display: flex;
-                        align-items: center;
-                        .main-menu{
-                            color: $black;
-                            font-size: 20px;
-                            font-weight: 500;
-                            letter-spacing: -1.5px;
-                            transition: 0.5s;
-                        }
-                        .main-menu.on{
-                            color: $red;
-                            font-size: 20px;
-                            font-weight: 500;
-                            letter-spacing: -1.5px;
-                            transition: 0.5s;
-                            &:before{
-                                content: "";
-                                display: block;
-                                width: 5px;
-                                height: 5px;
-                                border-radius: 50px;
-                                background-color: $red;
-                                position: absolute;
-                                top: 46px;
-                                right: -10px;
+                        .main-menu-wrapper{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            .main-menu{
+                                color: $black;
+                                font-size: 20px;
+                                font-weight: 500;
+                                letter-spacing: -1.5px;
+                                transition: 0.5s;
                             }
-                            &:after{
-                                content: "";
-                                display: block;
-                                width: 100%;
-                                height: 2px;
-                                background-color: $red;
-                                position: absolute;
-                                bottom: -2px;
+                            .main-menu.on{
+                                color: $red;
+                                font-size: 20px;
+                                font-weight: 500;
+                                letter-spacing: -1.5px;
+                                transition: 0.5s;
+                                &:before{
+                                    content: "";
+                                    display: block;
+                                    width: 5px;
+                                    height: 5px;
+                                    border-radius: 50px;
+                                    background-color: $red;
+                                    position: absolute;
+                                    top: 46px;
+                                    right: -10px;
+                                }
+                                &:after{
+                                    content: "";
+                                    display: block;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: $red;
+                                    position: absolute;
+                                    bottom: -2px;
+                                }
                             }
                         }
                         .sub-menu{

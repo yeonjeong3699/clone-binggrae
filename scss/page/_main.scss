@@ -1,0 +1,72 @@
+.m-container{
+    width: 100%;
+    .visual-wrapper{
+        width: 100%;
+        height: 896px;
+        background-image: url(../../img/visual_bg.png);
+        img{
+            object-fit: none;
+            padding-top: 130px;
+            box-sizing: border-box;
+        }
+        .search-box{
+            width: 1020px;
+            height: 80px;
+            background-color: white;
+            border-radius: 100px;
+            border: none;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            .bx-search{
+                font-size: 25px;
+                color: $black;
+                margin-left: 55px;
+            }
+            #search-bar{
+                width: 725px;
+                height: 80px;
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                border: none;
+                background: transparent;
+                margin-left: 10px;
+            }
+            .search-btn{
+                width: 180px;
+                height: 55px;
+                border-radius: 100px;
+                border: none;
+                background-color: $red;
+                margin-left: 10px;
+                color: white;
+                font-family: 'poppins';
+                font-weight: 500;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+        .tag-box{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            a{
+                width: 120px;
+                height: 35px;
+                border: solid 1px #edecef;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Binggrae';
+                font-size: 12px;
+                color: $black;
+            }
+        }
+    }//visual-wrapper
+
+
+}
