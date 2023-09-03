@@ -68,5 +68,86 @@
         }
     }//visual-wrapper
 
+    .taste-wrapper{
+        background-image: url(../../img/taste_bg.png);
+        // background-color: black;
+        .inner{
+            .title{
+                font-family: 'Binggrae-bold';
+                font-size: 38px;
+                color: $black;
+                text-align: center;
+                letter-spacing: -1px;
+                padding: 38px 0px;
+                box-sizing: border-box;
+            }
+
+            //swiper
+            .swiper-container{
+                position: relative;
+
+                //swiper-button
+                .swiper-button-prev,
+                .swiper-button-next{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    i{
+                        font-size: 35px;
+                        color: $black;
+                    }
+                }
+
+                .swiper-button-prev{
+                    left: 40px;
+                }
+
+                .swiper-button-next{
+                    right: 40px;
+                }
+
+                .swiper-button-prev::after,
+                .swiper-button-next::after{
+                    display: none;
+                }
+                
+                //item
+                .swiper{
+                    width: 1542px;
+                    .swiper-wrapper{
+                        .item{
+                            padding-top: 10px;
+                            box-sizing: border-box;
+                            width: 242px;
+                            transition: 0.5s;
+                            &.on{
+                                padding-top: 0px;
+                                transition: 0.5s;
+                                & > a:last-of-type{
+                                    background-color: $red;
+                                    color: white;
+                                }
+                            }
+
+                            & > a:last-of-type{
+                                width: 100%;
+                                height: 43px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $gray;
+                                border-radius: 50px;
+                                margin-top: 12px;
+                                font-size: 16px;
+                                color: $black;
+                                letter-spacing: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }

@@ -22,8 +22,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!--script-->
-    <script src="./script/header.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -142,6 +144,7 @@
         </div><!--h-bottom-->
 
     </header>
+    <script src="./script/header.js"></script>
 
     <main class="m-container">
         <section class="visual-wrapper">
@@ -149,7 +152,7 @@
 
             <form action="" method="" class="search-box">
                 <label for="search-bar"><i class='bx bx-search'></i></label>
-                <input type="text" name="search" placeholder="검색어를 입력해주세요" id="search-bar">
+                <input type="text" name="search" placeholder="제품명을 입력해주세요" id="search-bar">
                 <button class="search-btn">SEARCH</button>
             </form>
 
@@ -163,10 +166,68 @@
         </section><!--visual-wrapper-->
 
         <section class="taste-wrapper">
+            <div class="inner">
+                <h2 class="title">행복한 빙그레의 맛&#33;</h2>
 
+                <div class="swiper-container">
+                    <div class="swiper-button-prev"><i class='bx bx-chevron-left'></i></div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_1.png"></a>
+                                <a href="#" title="제품 페이지로 이동" class="item-name">아이스크림</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_2.png"></a>
+                                <a href="#" title="제품 페이지로 이동">우유&#47;치즈</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_3.png"></a>
+                                <a href="#" title="제품 페이지로 이동">발효유</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_4.png"></a>
+                                <a href="#" title="제품 페이지로 이동">커피</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_5.png"></a>
+                                <a href="#" title="제품 페이지로 이동">주스</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_6.png"></a>
+                                <a href="#" title="제품 페이지로 이동">음료</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_7.png"></a>
+                                <a href="#" title="제품 페이지로 이동">스낵&#47;디저트</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_8.png"></a>
+                                <a href="#" title="제품 페이지로 이동">건강지향</a>
+                            </div>
+
+                            <div class="swiper-slide item">
+                                <a href="#" title="제품 페이지로 이동"><img src="./img/slide_item_9.png"></a>
+                                <a href="#" title="제품 페이지로 이동">수출제품</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"><i class='bx bx-chevron-right'></i></div>
+                </div>
+            </div>
         </section>
 
     </main>
+    <script src="./script/main.js"></script>
 </body>
 
 </html>

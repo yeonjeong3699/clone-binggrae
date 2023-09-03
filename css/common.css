@@ -94,9 +94,13 @@ html {
 
 @font-face {
   font-family: "Binggrae";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff") format("woff");
+  src: url("/font/Binggrae.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
+}
+@font-face {
+  font-family: "Binggrae-bold";
+  src: url("/font/Binggrae-Bold.woff") format("woff");
+  font-weight: bold;
 }
 .h-container {
   position: fixed;
@@ -217,6 +221,7 @@ html {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: -1.5px;
+  transition: 0.5s;
 }
 .h-container .h-bottom .inner .gnb-wrapper .gnb-list > li .sub-menu a:hover {
   color: #e92b28;
@@ -246,9 +251,8 @@ html {
   margin-left: 12px;
 }
 .h-container .h-bottom .inner .icon-wrapper .lang-box .lang-list {
-  visibility: hidden;
+  overflow: hidden;
   width: 53px;
-  height: 0px;
   background-color: white;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -260,6 +264,14 @@ html {
   justify-content: center;
   gap: 12px;
   transition: 0.5s;
+}
+.h-container .h-bottom .inner .icon-wrapper .lang-box .lang-list.on {
+  visibility: visible;
+  height: 110px;
+}
+.h-container .h-bottom .inner .icon-wrapper .lang-box .lang-list.off {
+  visibility: hidden;
+  height: 0px;
 }
 .h-container .h-bottom .inner .icon-wrapper .lang-box .lang-list li {
   display: flex;
@@ -365,4 +377,70 @@ html {
   font-family: "Binggrae";
   font-size: 12px;
   color: #1f1f1f;
+}
+.m-container .taste-wrapper {
+  background-image: url(../../img/taste_bg.png);
+}
+.m-container .taste-wrapper .inner .title {
+  font-family: "Binggrae-bold";
+  font-size: 38px;
+  color: #1f1f1f;
+  text-align: center;
+  letter-spacing: -1px;
+  padding: 38px 0px;
+  box-sizing: border-box;
+}
+.m-container .taste-wrapper .inner .swiper-container {
+  position: relative;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-prev,
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-prev i,
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-next i {
+  font-size: 35px;
+  color: #1f1f1f;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-prev {
+  left: 40px;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-next {
+  right: 40px;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-prev::after,
+.m-container .taste-wrapper .inner .swiper-container .swiper-button-next::after {
+  display: none;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper {
+  width: 1542px;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper .swiper-wrapper .item {
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: 242px;
+  transition: 0.5s;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper .swiper-wrapper .item.on {
+  padding-top: 0px;
+  transition: 0.5s;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper .swiper-wrapper .item.on > a:last-of-type {
+  background-color: #e92b28;
+  color: white;
+}
+.m-container .taste-wrapper .inner .swiper-container .swiper .swiper-wrapper .item > a:last-of-type {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 50px;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #1f1f1f;
+  letter-spacing: -1px;
 }
